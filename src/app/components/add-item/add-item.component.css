@@ -1,0 +1,75 @@
+
+
+
+.comprado {
+    text-decoration: line-through;
+    color: black
+  }
+
+  .container {
+    border: solid black 2px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 200px auto 0 auto;
+    border-radius: 10px;
+
+    
+  }
+
+  .botaoadicionar{
+    display: block;
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    
+  }
+  
+  input{
+    border-radius: 10px;
+    width: 250px;
+    height: 25px;
+    border: 2px solid black;
+  }
+
+.button{
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+  }
+  span {
+    border: solid 2px black;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-family: Arial, sans-serif;
+  }
+
+  h2{
+    font-family: Arial, sans-serif;
+  }
+
+  h4{
+    font-family: Arial, sans-serif;
+  }
+
+  h3 {
+    font-family: Arial, sans-serif;
+  }
+  

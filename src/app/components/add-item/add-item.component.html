@@ -1,0 +1,33 @@
+<div class="container">
+    <h2>Adicionar Item ao carrinho</h2>
+    <form (ngSubmit)="adicionarItem()">
+      <input type="text" [(ngModel)]="novoItem" name="item" required placeholder="digite o nome do item" />
+      <button class="botaoadicionar" type="submit">Adicionar</button>
+    </form>
+  
+    <h3>carrinho de compras</h3>
+
+    <ul>
+      <li *ngFor="let item of itensNaoComprados">
+        <div>
+          <span>{{ item.nome }}</span>
+          <button class="button" (click)="editarItem(item)">Editar</button>
+          <button class="button" (click)="removerItem(item)">Excluir  🗑️</button>
+          <button class="button" (click)="comprarItem(item)">Comprar</button>
+        </div>
+      </li>
+    </ul>
+  
+    <h3>itens Comprados</h3>
+    <ul>
+      <li *ngFor="let item of itensComprados">
+        <div class="divbotoes">
+          <span class="comprado">{{ item.nome }}</span>
+          <button class="button" (click)="comprarItem(item)">Desmarcar</button>
+          <button class="button" (click)="removerItem(item)">Excluir 🗑️</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  
